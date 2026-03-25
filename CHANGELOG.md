@@ -1,3 +1,33 @@
+## 🔄 Versione 1.12.0 – 2026-03-25
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] La tabella risultati supporta ora filtri KPI con card dedicate, preset configurabili, riordino drag-and-drop e sidebar comprimibile, così è più rapido applicare viste mirate e confrontare indicatori chiave senza ricostruire i filtri ogni volta.
+
+#### Miglioramenti
+* [IMPROVEMENT] Il flusso di import Excel è stato reso più leggibile e robusto: upload collassabile, gestione file e manifest più chiara, anteprima dati più affidabile e modali tipizzate aiutano a controllare meglio il contenuto prima dell'esecuzione.
+* [IMPROVEMENT] La griglia evidenzia meglio le colonne riservate agli amministratori tramite tooltip contestuali, riducendo l'ambiguità sui campi visibili solo con permessi elevati.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Introdotto lo storico degli import Excel con archivio dedicato, ricerca configurabile, dettaglio esecuzioni e paginazione, così è più semplice ricostruire esiti, file processati e operazioni già eseguite.
+* [FEAT] Aggiunto il nuovo workflow di import Python con configurazione pacchetti, gestione campi manifest e processo in due fasi con anteprima e conferma, utile per validare i dati prima dell'avvio effettivo dell'elaborazione.
+* [FEAT] Le schedulazioni email mostrano ora una scheda dettaglio con frequenza, destinatari, filtri, oggetto e SQL copiabili, mentre i messaggi inviati includono un riepilogo sintetico della configurazione attiva per facilitare verifiche e supporto.
+
+#### Correzioni
+* [FIX] Normalizzata la gestione delle date e ore SQL Server tra backend, schedulazioni, pannello aggiornamenti e notifiche, evitando conversioni UTC implicite che potevano produrre scostamenti negli orari mostrati o pianificati.
+
+#### Miglioramenti
+* [IMPROVEMENT] La configurazione Admin dei filtri KPI è più guidata e stabile grazie a validazioni dedicate e riordino dei preset, riducendo errori nella pubblicazione dei filtri disponibili agli utenti.
+* [IMPROVEMENT] La gestione utenti è stata snellita con caricamento dinamico dei ruoli e ricerca nella modale, rendendo più veloce assegnare o verificare i permessi.
+* [IMPROVEMENT] Il pannello aggiornamenti consente di copiare il changelog con testo già normalizzato, facilitando la condivisione delle note di rilascio senza correzioni manuali.
+* [IMPROVEMENT] Il pannello comandi evidenzia meglio l'impatto dei pulsanti custom mostrando il conteggio delle tab coinvolte, così la configurazione risulta più immediata da verificare.
+
+#### Documentazione
+* [DOCS] Aggiornate guide e documentazione tecnica su filtri KPI, storico import Excel, import Python, schedulazioni email, installazione stage e gestione degli aggiornamenti, mantenendo l'operatività Admin allineata ai nuovi flussi.
+
 ## 🔄 Versione 1.11.3 – 2026-03-12
 
 ### 👤 Utente
