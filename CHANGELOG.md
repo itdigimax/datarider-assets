@@ -1,3 +1,31 @@
+## 🔄 Versione 1.12.1 – 2026-04-08
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] I parametri data supportano ora l'inserimento manuale nel formato italiano e preset rapidi nel calendario, così è più veloce compilare intervalli ricorrenti senza dover convertire le date a mano.
+* [FEAT] I pulsanti custom di intestazione, se configurati lato admin, possono passare automaticamente alla modalità bulk quando la selezione supera le soglie configurate, rendendo più rapide le operazioni massive su molte righe.
+
+#### Correzioni
+* [FIX] Nelle operazioni di inserimento, modifica, duplicazione ed eliminazione la modale resta aperta in caso di errore e mostra subito il messaggio restituito, evitando di perdere il contesto e di reinserire i dati da capo.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] La configurazione dei pulsanti header supporta ora campi dedicati per modalità bulk, stored procedure massiva e soglie di attivazione, con template SQL specifico per preparare più facilmente esecuzioni su più righe in un'unica chiamata.
+
+#### Correzioni
+* [FIX] La gestione tecnica del refresh colonne e dei parametri SQL è stata resa più affidabile, evitando disallineamenti tra configurazione salvata, tipi attesi e stato mostrato nei flussi di supporto e diagnostica.
+
+#### Miglioramenti
+* [IMPROVEMENT] La tabella risultati permette agli amministratori di mostrare o nascondere rapidamente colonne Admin e colonne nascoste, riducendo il rumore visivo e facilitando i controlli sui campi tecnici.
+* [IMPROVEMENT] Dal dettaglio comando gli amministratori hanno una vista unica dei log di esecuzione e dei log diagnostici con esito, messaggi e dettagli JSON, utile per capire più rapidamente cosa è successo dopo un lancio.
+* [IMPROVEMENT] Il pannello Admin delle colonne offre filtri di visibilità più coerenti e uno stile più uniforme, così è più semplice isolare campi nascosti o riservati durante la configurazione del comando.
+* [IMPROVEMENT] I template backend per pulsanti custom e operazioni CUD sono stati aggiornati per gestire meglio payload bulk, righe aggiornate e riferimenti alle stored procedure, rendendo più prevedibile la manutenzione delle automazioni.
+
+#### Documentazione
+* [DOCS] Aggiornate README e guide operative su modalità bulk dei pulsanti header, parametri data, visibilità colonne e consultazione dei log, mantenendo allineata la documentazione ai nuovi flussi applicativi.
+
 ## 🔄 Versione 1.12.0 – 2026-03-25
 
 ### 👤 Utente
