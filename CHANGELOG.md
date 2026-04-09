@@ -1,3 +1,18 @@
+## 🔄 Versione 1.12.2 – 2026-04-09
+
+### 👤 Utente
+
+* Nessuna modifica rilevante.
+
+### 🛠️ Admin
+
+#### Correzioni
+* [FIX] Il menu runtime delle colonne rispetta ora correttamente i permessi: i campi marcati come nascosti non vengono più riesposti agli utenti non Admin e i toggle compaiono solo quando l'operatore ha davvero accesso alle informazioni tecniche.
+* [FIX] Se la colorazione alternata della tabella dipende da un campo visibile solo agli Admin, il toggle `Visualizza colonne Admin` può ora nascondere la colonna senza spezzare la sequenza cromatica delle righe.
+
+#### Documentazione
+* [DOCS] Aggiornate README, guida Admin e istruzioni di release per chiarire il comportamento di colonne Admin/nascoste, la continuità della colorazione riga e i criteri di classificazione tra modifiche Utente e Admin.
+
 ## 🔄 Versione 1.12.1 – 2026-04-08
 
 ### 👤 Utente
