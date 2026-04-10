@@ -1,3 +1,18 @@
+## 🔄 Versione 1.12.3 – 2026-04-10
+
+### 👤 Utente
+
+#### Correzioni
+* [FIX] Il pulsante **Scarica Modello** dell'import Excel ora blocca in modo esplicito le stored configurate senza i parametri tecnici richiesti, mostrando un messaggio chiaro invece di propagare errori SQL generici.
+
+### 🛠️ Admin
+
+#### Correzioni
+* [FIX] L'endpoint `POST /api/commands/:commandId/execute` valida ora la firma della stored di import sul database operativo del comando prima della `EXEC`, verificando la presenza di `@TableName`, `@Scenario` e `@UserName`.
+
+#### Documentazione
+* [DOCS] Aggiornate README e documentazione Admin/Tecnica del flusso Excel Import per chiarire il controllo preventivo sui parametri obbligatori delle stored usate da `DownloadExcelModel` ed esecuzione import.
+
 ## 🔄 Versione 1.12.2 – 2026-04-09
 
 ### 👤 Utente
