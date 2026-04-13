@@ -1,17 +1,20 @@
-## 🔄 Versione 1.12.3 – 2026-04-10
+## 🔄 Versione 1.12.3 – 2026-04-13
 
 ### 👤 Utente
 
 #### Correzioni
-* [FIX] Il pulsante **Scarica Modello** dell'import Excel ora blocca in modo esplicito le stored configurate senza i parametri tecnici richiesti, mostrando un messaggio chiaro invece di propagare errori SQL generici.
+* [FIX] Il pulsante **Scarica Modello** dell'import Excel intercetta ora le stored configurate senza i parametri tecnici obbligatori e mostra un errore esplicito, evitando messaggi SQL generici durante la generazione del file.
 
 ### 🛠️ Admin
 
+#### Nuove funzionalità
+* [FEAT] Nel pannello Admin dei **Pulsanti Custom** restano ora visibili anche le azioni disattivate, così possono essere corrette e riattivate senza interventi manuali a database.
+
 #### Correzioni
-* [FIX] L'endpoint `POST /api/commands/:commandId/execute` valida ora la firma della stored di import sul database operativo del comando prima della `EXEC`, verificando la presenza di `@TableName`, `@Scenario` e `@UserName`.
+* [FIX] L'endpoint `POST /api/commands/:commandId/execute` verifica ora sul database operativo che la stored di import dichiari `@TableName`, `@Scenario` e `@UserName` prima della `EXEC`, bloccando le configurazioni incomplete con un errore leggibile.
 
 #### Documentazione
-* [DOCS] Aggiornate README e documentazione Admin/Tecnica del flusso Excel Import per chiarire il controllo preventivo sui parametri obbligatori delle stored usate da `DownloadExcelModel` ed esecuzione import.
+* [DOCS] Aggiornate README e guide Admin/Tecniche per chiarire sia il controllo preventivo delle stored di import Excel sia la gestione dei pulsanti custom disattivati nel pannello amministrativo.
 
 ## 🔄 Versione 1.12.2 – 2026-04-09
 
