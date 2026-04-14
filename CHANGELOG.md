@@ -1,3 +1,25 @@
+## 🔄 Versione 1.12.4 – 2026-04-14
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] Quando il server pubblica una nuova versione, la barra superiore segnala ora l'aggiornamento disponibile con un pulsante dedicato, così ogni utente può applicare la build più recente nel momento opportuno senza refresh forzati durante il lavoro.
+
+#### Miglioramenti
+* [IMPROVEMENT] Il controllo versione rivalida ora più spesso il client e il documento principale, riducendo i casi in cui l'app resta allineata a cache obsolete dopo un deploy o al ritorno su una tab già aperta.
+
+### 🛠️ Admin
+
+#### Correzioni
+* [FIX] Nel tab Parametri del pannello Admin è ora possibile salvare anche una configurazione vuota, così gli amministratori possono rimuovere tutti i parametri associati a un comando o a un pulsante senza intervenire direttamente sul database.
+* [FIX] Il controllo preliminare di **Scarica Modello** per Excel Import legge ora la firma della stored nel database realmente indicato da `CB_ActionSql`, evitando falsi errori sui parametri tecnici mancanti quando la procedura è qualificata su un altro database.
+
+#### Miglioramenti
+* [IMPROVEMENT] Il rollout delle nuove release è più prevedibile anche lato operativo: `index.html`, `sw.js` e l'endpoint versione non vengono più serviti da cache stale, mentre gli asset fingerprintati restano cacheati in modo efficiente.
+
+#### Documentazione
+* [DOCS] Aggiornate README e guide Admin/Installazione per documentare il nuovo flusso di aggiornamento client, la strategia di cache e i fix su import Excel e configurazione parametri.
+
 ## 🔄 Versione 1.12.3 – 2026-04-13
 
 ### 👤 Utente
