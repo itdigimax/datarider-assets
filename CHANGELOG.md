@@ -1,3 +1,21 @@
+## 🔄 Versione 1.13.0 – 2026-04-15
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] La griglia supporta ora la modifica inline (EXCEL style) direttamente nelle celle dei risultati, con editor coerenti per testo, numeri, date, booleani e select, così è possibile aggiornare i valori senza aprire form separati.
+* [FEAT] Nelle configurazioni con salvataggio differito è ora possibile estendere rapidamente lo stesso valore a più celle tramite drag-fill e velocizzare l'inserimento con scorciatoie di copia e incolla durante la modifica.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Il pannello Admin consente ora di abilitare la modifica inline per singolo comando, scegliere la modalità di salvataggio e configurare la stored procedure dedicata, con supporto alla creazione guidata dal template SQL e al salvataggio della configurazione dal tab Tipo Modifica.
+* [FEAT] Pulsanti comando, flussi Excel Import e salvataggi inline possono ora usare timeout specifici per singola azione, così gli amministratori possono adattare meglio le esecuzioni lunghe senza dipendere da un unico limite generale del comando.
+* [FEAT] Il backend gestisce il salvataggio inline con un endpoint dedicato e supporta il ritorno delle righe aggiornate dalla stored procedure, rendendo più affidabile l'aggiornamento della griglia senza refresh completi.
+
+#### Documentazione
+* [DOCS] Aggiornate README, guida Admin e documentazione tecnica per descrivere configurazione della modifica inline, template della stored procedure e nuovi timeout dedicati per pulsanti e import Excel.
+
 ## 🔄 Versione 1.12.4 – 2026-04-14
 
 ### 👤 Utente
