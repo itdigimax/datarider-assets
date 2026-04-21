@@ -1,3 +1,28 @@
+## 🔄 Versione 1.13.1 – 2026-04-21
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] I form dei comandi possono mostrare etichette più leggibili per i parametri, così la compilazione risulta più chiara.
+* [FEAT] La modifica inline supporta ora metadati cella più ricchi: tooltip dedicati, colonne sempre visibili anche con il filtro "Solo modificate", celle in sola lettura consultabili/copabili e indicatori più chiari per i campi a scelta.
+* [FEAT] I campi select e multi-select in modifica inline sono più rapidi da usare: le scelte multiple si selezionano con checkbox senza combinazioni da tastiera, i valori vengono mostrati in modo più leggibile e i select singoli non appaiono più precompilati sulla prima opzione.
+
+#### Correzioni
+* [FIX] Corretta l'analisi dei parametri SQL inline: i simboli `@` presenti dentro stringhe o commenti non causano più falsi blocchi dell'auto-esecuzione dei comandi.
+
+#### Miglioramenti
+* [IMPROVEMENT] Quando l'auto-esecuzione non può partire, l'app spiega ora subito il motivo, distinguendo in modo esplicito casi come parametri richiesti, import Excel attivo o modalità di esecuzione non compatibili.
+* [IMPROVEMENT] Il flusso Excel Import aggiorna in modo più coerente stato di caricamento e conteggio errori tra i vari passaggi, rendendo più leggibile l'avanzamento durante anteprima, trasformazione e validazione.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Introdotta la Excel Import Step Policy, con regole per step, bypass ed esecuzione legate ai ruoli dei pulsanti, così gli amministratori possono governare in modo più preciso il flusso tra anteprima, trasformazione, validazione ed esecuzione.
+* [FEAT] Il pannello Admin consente ora di configurare una descrizione visibile per ogni parametro comando, utile per presentare etichette comprensibili agli utenti senza rinominare i campi tecnici.
+
+#### Documentazione
+* [DOCS] Aggiornate README, guide e documentazione tecnica per descrivere la Step Policy dell'Excel Import, le nuove etichette visibili dei parametri e il contratto metadata della modifica inline.
+
 ## 🔄 Versione 1.13.0 – 2026-04-15
 
 ### 👤 Utente
