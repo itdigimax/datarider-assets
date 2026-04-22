@@ -1,3 +1,28 @@
+## 🔄 Versione 1.13.2 – 2026-04-22
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] Le tabelle configurate con blocco colonne possono ora mantenere fisse a sinistra la colonna scelta e tutte le precedenti durante lo scroll orizzontale, così è più semplice leggere righe molto larghe senza perdere i riferimenti principali.
+
+#### Correzioni
+* [FIX] La modifica inline dei campi select apre ora correttamente il selettore nativo già al primo click, evitando tentativi ripetuti quando si entra in editazione.
+
+#### Miglioramenti
+* [IMPROVEMENT] La modifica inline è più rapida da gestire: ogni riga modificata può essere ripristinata direttamente dalla prima cella e l’annullamento puntuale delle singole celle mantiene meglio il contesto di lavoro.
+* [IMPROVEMENT] La resa delle celle inline e delle larghezze colonna è stata resa più stabile, con un allineamento più coerente anche durante resize, scroll orizzontale e uso di colonne congelate.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Nel tab Colonne del pannello Admin è ora possibile definire il punto di blocco `Blocca a sinistra`, così la griglia congela automaticamente quella colonna e tutte le precedenti mantenendo allineati intestazione, corpo e totali.
+
+#### Miglioramenti
+* [IMPROVEMENT] Sono stati aggiunti punti di profiling e diagnostica nella DataTable per misurare più facilmente tempi di rendering, attivazione inline e trasformazioni delle righe durante le analisi prestazionali.
+
+#### Documentazione
+* [DOCS] Aggiornate README, guida utente, guida Admin e nota tecnica dedicata per documentare il blocco colonne, le migliorie della modifica inline e il nuovo comando di monitoraggio utilizzo app.
+
 ## 🔄 Versione 1.13.1 – 2026-04-21
 
 ### 👤 Utente
