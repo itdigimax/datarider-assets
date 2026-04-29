@@ -1,3 +1,37 @@
+## 🔄 Versione 1.14.0 – 2026-04-29
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] La DataTable raggruppata include ora una scrollbar verticale sticky sul bordo destro: anche con molte colonne e scroll orizzontale, lo scorrimento delle righe resta sempre raggiungibile e più comodo da usare.
+* [FEAT] La preview Excel è stata estesa con ricerca testuale, filtri per colonna (anche su valori null/non-null), ordinamento e riepilogo errori filtrabile, così è più semplice isolare rapidamente i record da correggere prima dell'esecuzione.
+* [FEAT] Lo stato della tabella viene gestito in modo più coerente lato URL, migliorando continuità di navigazione e ripristino del contesto durante il lavoro.
+
+#### Correzioni
+* [FIX] Corretta la gestione dei pulsanti custom inline dopo azioni che aggiornano la riga: la visibilità e lo stato dei pulsanti restano coerenti anche quando il risultato sostituisce i dati appena elaborati.
+* [FIX] Stabilizzata la visualizzazione della lista in modalità raggruppata, riducendo i casi in cui la griglia poteva desincronizzarsi dopo interazioni su testata, notifiche o variazioni di layout.
+
+#### Miglioramenti
+* [IMPROVEMENT] L'editing inline è stato reso più fluido e prevedibile, con gestione più robusta e copertura test estesa sui flussi reali di modifica.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Il pannello Colonne offre ora controlli di visibilità più immediati con icone dedicate (visibile, solo admin, nascosta) e supporto esplicito al tipo decimal con preset automatici di allineamento/larghezza.
+* [FEAT] I template SQL dei pulsanti custom e bulk possono generare in modo più affidabile le variabili anche quando il field style non è completo, ricavando le colonne dalla SELECT del comando e includendo metadati runtime utili alla procedura.
+* [FEAT] La duplicazione comandi copia anche configurazioni operative prima escluse (incluse validazioni Excel e campi runtime del comando), rendendo i cloni più pronti all'uso senza rifiniture manuali.
+
+#### Correzioni
+* [FIX] Nell'Inspector del tab Colonne il focus viene ora ripristinato correttamente anche dopo patch immediate, evitando perdita del cursore durante la modifica rapida dei campi.
+* [FIX] La risoluzione runtime della colonna target dei pulsanti custom è stata corretta con normalizzazione nome/indice, riducendo disallineamenti tra configurazione admin e posizione effettiva in tabella.
+
+#### Miglioramenti
+* [IMPROVEMENT] La DataTable è stata riorganizzata in hook dedicati (colonne, filtri, grouping, inline editing, modal e azioni header/export), migliorando manutenibilità, testabilità e isolamento delle regressioni.
+* [IMPROVEMENT] Potenziata la diagnostica tecnica per pulsanti custom e flussi correlati, con log più dettagliati su risoluzione payload, preview SQL e comportamento runtime.
+
+#### Documentazione
+* [DOCS] Aggiornate README, guida utente, guida Admin e note tecniche per riflettere le novità su virtualizzazione raggruppata, gestione colonne, pulsanti custom, duplicazione comandi, preview Excel e boundary del refactor DataTable.
+
 ## 🔄 Versione 1.13.2 – 2026-04-22
 
 ### 👤 Utente
