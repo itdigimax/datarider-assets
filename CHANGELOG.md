@@ -1,3 +1,37 @@
+## 🔄 Versione 1.15.0 – 2026-05-07
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] I pulsanti personalizzati in linea possono ora eliminare subito la riga dalla tabella quando l'azione lo prevede, senza lasciare righe "fantasma" dopo l'aggiornamento.
+* [FEAT] La modifica dei dati puo aprirsi anche in pannello laterale, cosi puoi controllare meglio i campi mentre resti sulla tabella.
+
+#### Correzioni
+* [FIX] Corretta la barra verticale della tabella raggruppata: resta agganciata al bordo destro ed è piu facile da usare anche con molte colonne.
+* [FIX] Nei campi a scelta obbligatori il valore iniziale viene gestito correttamente, evitando selezioni errate o blocchi alla prima apertura.
+
+#### Miglioramenti
+* [IMPROVEMENT] La finestra di inserimento/modifica mostra meglio i campi in sola lettura e separa in modo piu chiaro le informazioni utili dalla parte editabile.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Introdotto il nuovo impianto Notifiche V2: dal pannello Admin puoi gestire messaggi e pianificazioni in modo piu completo, con storico esecuzioni e strumenti dedicati per operare senza query manuali.
+* [FEAT] Le notifiche pianificate supportano ora consegne multi-canale (email e Teams), con gestione azioni e card strutturate per rendere i messaggi piu chiari e tracciabili.
+* [FEAT] Aggiunta la modalita dry-run per il backfill delle schedulazioni legacy: puoi simulare l'operazione e vedere un riepilogo di validazione prima di migrare dati reali dal vecchio modo di schedulazione alla versione V2.
+* [FEAT] Nel tab Parametri comando puoi definire la visibilita per singolo parametro, cosi i form runtime mostrano solo i campi necessari agli utenti.
+
+#### Correzioni
+* [FIX] Rafforzato il flusso di esecuzione dell'Import Excel: la risoluzione del database per gli step è piu affidabile e riduce errori di connessione e configurazione.
+* [FIX] Reso piu robusto l'archivio storico dell'Import Excel con gestione dinamica delle colonne mancanti e logging errori piu utile in diagnosi.
+
+#### Miglioramenti
+* [IMPROVEMENT] Aggiornati i template SQL (comandi, custom, bulk, CUD e import) con esempi di esecuzione e tracciamento piu completo, per velocizzare setup e troubleshooting.
+* [IMPROVEMENT] Rifinita la struttura del pannello notifiche Admin per separare meglio messaggi, consegne, test e duplicazioni, con flusso operativo piu lineare.
+
+#### Documentazione
+* [DOCS] Allineate README, guida Admin e note tecniche sulle nuove notifiche V2, i canali supportati, il dry-run di backfill e le regole operative dell'Import Excel.
+
 ## 🔄 Versione 1.14.0 – 2026-04-29
 
 ### 👤 Utente
