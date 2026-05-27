@@ -1,3 +1,39 @@
+## 🔄 Versione 1.15.1 – 2026-05-27
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] L'export della tabella segue ora lo stesso ordine delle colonne visibili a schermo e usa etichette più leggibili, così il file risulta subito più chiaro.
+* [FEAT] In modalità modifica a pannello puoi cambiare riga con un clic e copiare al volo un valore con doppio clic, senza perdere il punto in cui stai lavorando.
+
+#### Correzioni
+* [FIX] Dopo l'aggiornamento di una riga, i pulsanti inline tornano disponibili correttamente anche quando la tabella si ricarica e cambia l'ordine dei risultati.
+* [FIX] L'export XLSX gestisce meglio le colonne data e data-ora, evitando formati incoerenti nel file scaricato.
+
+#### Miglioramenti
+* [IMPROVEMENT] I riepiloghi filtro molto lunghi vengono mostrati in modo più compatto, così restano chiari anche con molti valori selezionati.
+
+#### Performance
+* [PERF] I filtri avanzati su elenchi lunghi sono più fluidi e reattivi anche su tabelle di grandi dimensioni.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Nel pannello Notifiche V2 è disponibile la vista del messaggio realmente inviato per ogni run (snapshot HTML email e payload Teams), utile per verifica e diagnosi.
+* [FEAT] La duplicazione comando copia anche schedulazioni legacy, messaggi e delivery V2; le copie vengono create disattivate per evitare invii accidentali.
+* [FEAT] Nei pannelli Pulsanti, CUD e Import è ora disponibile una modale per visualizzare la definizione SQL dell'oggetto configurato direttamente dall'interfaccia.
+* [FEAT] Solo per gli admin introdotta modalità dark mode abilitabile dal pulsante dedicato in alto vicino al nome dell'utente.
+
+#### Correzioni
+* [FIX] Nel refresh colonne dei comandi a stored procedure, i nomi procedura senza prefisso `EXEC` vengono gestiti correttamente con anteprima guidata, riducendo errori di configurazione.
+* [FIX] Corretto lo script `Export-DataRiderConfig.ps1` nella fusione dei mapping FK fallback, evitando deduplicazioni incomplete durante l'export.
+
+#### Miglioramenti
+* [IMPROVEMENT] Lo storico Import Excel include una ricerca globale nelle righe di dettaglio (anche oltre la pagina corrente), facilitando i controlli operativi.
+
+#### Documentazione
+* [DOCS] Rafforzate le regole ufficiali di generazione changelog e introdotti agente/prompt dedicati al workflow release.
+
 ## 🔄 Versione 1.15.0 – 2026-05-07
 
 ### 👤 Utente
