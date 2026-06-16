@@ -1,3 +1,22 @@
+## 🔄 Versione 1.15.2 – 2026-06-16
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] Nella finestra di anteprima dell'import Excel sono ora disponibili pulsanti per scaricare i dati visualizzati come file Excel o CSV, inclusi filtri e ordinamento attivi.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Nel pannello configurazione notifiche Teams sono disponibili due nuove modalità di invio: `TEAMS_ADAPTIVE_GRID`, che mostra i dati in griglia con parametri configurabili (numero massimo righe, colonne, titolo riga), e `TEAMS_ADAPTIVE_GROUPED`, che invia card con raggruppamento per colonne con controllo su espansione, conteggi e ordinamento.
+* [FEAT] Lo script `Export-DataRiderConfig.ps1` supporta ora l'esportazione di un singolo comando tramite parametro filtro, senza dover esportare tutta la configurazione.
+* [FEAT] Aggiunto supporto per l'ambiente stage: nuova configurazione PM2 dedicata e script di avvio separato per deployment su VM Linux, senza impattare la produzione.
+
+#### Correzioni
+* [FIX] Corretto un carattere speciale visualizzato in modo errato nel testo di suggerimento del pannello impostazioni SMTP.
+
+---
+
 ## 🔄 Versione 1.15.1 – 2026-05-27
 
 ### 👤 Utente
