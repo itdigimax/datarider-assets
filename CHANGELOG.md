@@ -1,3 +1,20 @@
+## 🔄 Versione 1.15.3 – 2026-07-09
+
+### 👤 Utente
+
+#### Correzioni
+* [FIX] Corrette le colonne bloccate a sinistra della tabella: durante lo scroll orizzontale lo sfondo rimane visibile e coerente, senza mescolarsi con i dati sottostanti.
+
+### 🛠️ Admin
+
+#### Correzioni
+* [FIX] Migliorato il logging degli errori di esecuzione comando: ora include context aggiuntivo (ID comando e utente) per facilitare la diagnosi.
+
+#### Sicurezza
+* [SECURITY] Aggiunto piano di audit sulla sicurezza che affronta le vulnerabilità critiche e le best practice.
+
+---
+
 ## 🔄 Versione 1.15.2 – 2026-06-16
 
 ### 👤 Utente
