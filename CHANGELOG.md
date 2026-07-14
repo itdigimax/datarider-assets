@@ -1,3 +1,16 @@
+## 🔄 Versione 1.15.4 – 2026-07-14
+
+### 🛠️ Admin
+
+#### Correzioni
+* [FIX] Allineata la configurazione di avvio per produzione e stage a `start-prod-backend.sh`, riducendo i problemi di deploy quando il backend viene avviato da PM2 senza una build server dist completa.
+
+#### Miglioramenti
+* [IMPROVEMENT] Estesa l’import Python per promuovere dinamicamente le chiavi manifest nei record legacy, così i comandi possono usare nuovi campi manifest senza cambiare il servizio.
+
+#### Documentazione
+* [DOCS] Aggiunta la documentazione di Phase 7 per il piano CRUD completo delle tabelle `PIM_*`, con inventario delle tabelle, chiavi e indicazioni operative per il rollout.
+
 ## 🔄 Versione 1.15.3 – 2026-07-09
 
 ### 👤 Utente
