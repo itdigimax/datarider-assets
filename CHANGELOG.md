@@ -1,3 +1,22 @@
+## 🔄 Versione 1.15.5 – 2026-07-31
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] Aggiunto un filtro nel pannello KPI per mostrare solo i valori maggiori di zero, così è più facile concentrarsi sui KPI positivi.
+
+#### Correzioni
+* [FIX] Corretto il parsing delle date senza orario, evitando che le date vengano spostate di un giorno in fusi orari avanti UTC.
+
+#### Miglioramenti
+* [IMPROVEMENT] I formati numerici personalizzati ora rispettano l’assenza del separatore delle migliaia quando la maschera non lo richiede.
+* [IMPROVEMENT] Reso più stabile il menu di esportazione della tabella: il tipo selezionato si resetta correttamente dopo l’azione.
+
+### 🛠️ Admin
+
+#### Documentazione
+* [DOCS] Aggiunta guida operativa per il rinnovo del certificato wildcard GoDaddy, con le procedure per Nginx Proxy Manager e Apache su `thor`.
+
 ## 🔄 Versione 1.15.4 – 2026-07-14
 
 ### 🛠️ Admin
