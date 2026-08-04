@@ -1,3 +1,22 @@
+## 🔄 Versione 1.15.6 – 2026-08-04
+
+### 👤 Utente
+
+#### Miglioramenti
+* [IMPROVEMENT] Gli oggetti delle email programmate possono ora includere automaticamente l'anno usando il segnaposto {{YEAR}}, rendendo i messaggi più chiari per i destinatari.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Aggiunto il segnaposto `{{YEAR}}` per gli oggetti delle email schedulate; gli amministratori possono inserirlo dall'interfaccia per includere l'anno (es. 2026) automaticamente.
+
+#### Miglioramenti
+* [IMPROVEMENT] Il pannello di gestione delle schedulazioni email mostra ora `{{YEAR}}` nei suggerimenti e nei pulsanti di inserimento, facilitando la composizione dell'oggetto.
+* [IMPROVEMENT] Aggiornato lo script `launch_dev.ps1` per semplificare l'avvio dell'ambiente di sviluppo locale.
+
+#### Documentazione
+* [DOCS] Aggiornati `CHANGELOG.md` e `VERSION.txt` come parte della procedura di rilascio.
+
 ## 🔄 Versione 1.15.5 – 2026-07-31
 
 ### 👤 Utente
