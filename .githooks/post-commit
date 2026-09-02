@@ -1,0 +1,49 @@
+#!/bin/sh
+
+# Cartella di destinazione. Cambiala con la tua cartella OneDrive reale.
+NOTES_DIR="$HOME/OneDrive - DIGIMAX S.r.l/GitCommitNotes"
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+REPO_NAME="$(basename "$REPO_ROOT")"
+BRANCH="$(git branch --show-current)"
+SHA="$(git rev-parse HEAD)"
+SHORT_SHA="$(git rev-parse --short HEAD)"
+COMMIT_DATE="$(git show -s --format=%cI HEAD)"
+FILE_DATE="$(git show -s --format=%cd --date=format:%Y-%m-%d_%H-%M-%S HEAD)"
+AUTHOR="$(git show -s --format='%an <%ae>' HEAD)"
+SUBJECT="$(git show -s --format=%s HEAD)"
+MESSAGE="$(git show -s --format=%B HEAD)"
+
+DEST_DIR="$NOTES_DIR/$REPO_NAME"
+mkdir -p "$DEST_DIR"
+
+OUT_FILE="$DEST_DIR/${FILE_DATE}_${SHORT_SHA}.md"
+
+{
+  echo "# Commit $SHORT_SHA"
+  echo
+  echo "- Repository: $REPO_NAME"
+  echo "- Branch: $BRANCH"
+  echo "- SHA: $SHA"
+  echo "- Date: $COMMIT_DATE"
+  echo "- Author: $AUTHOR"
+  echo "- Subject: $SUBJECT"
+  echo
+  echo "## Commit message"
+  echo
+  echo '```text'
+  echo "$MESSAGE"
+  echo '```'
+  echo
+  echo "## Files changed"
+  echo
+  echo '```text'
+  git show --name-status --format= HEAD
+  echo '```'
+  echo
+  echo "## Diff summary"
+  echo
+  echo '```text'
+  git show --stat --format= HEAD
+  echo '```'
+} > "$OUT_FILE"
