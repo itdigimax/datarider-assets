@@ -1,3 +1,22 @@
+## 🔄 Versione 1.15.7 – 2026-09-28
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+
+* [FEAT] Aggiunta la matrice dei comandi e dei ruoli, che permette di confrontare rapidamente chi può accedere a ciascun comando.
+* [FEAT] Aggiunto un flusso guidato per creare comandi DataRider da query o procedure, pubblicarli in stage e generare le relative migrazioni.
+
+#### Correzioni
+
+* [FIX] Corrette la descrizione del ruolo Admin e le intestazioni della matrice dei permessi.
+
+#### Miglioramenti
+* [IMPROVEMENT] I comandi collegati a server dismessi vengono disattivati durante la migrazione, evitando esecuzioni verso connessioni non più valide.
+
+#### Documentazione
+* [DOCS] Aggiunte istruzioni operative per creare, verificare e pubblicare comandi DataRider e per generare le relative migrazioni.
+
 ## 🔄 Versione 1.15.6 – 2026-08-04
 
 ### 👤 Utente
