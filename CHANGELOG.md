@@ -1,3 +1,25 @@
+## 🔄 Versione 1.15.8 – 2026-10-06
+
+### 👤 Utente
+
+#### Nuove funzionalità
+* [FEAT] Nel Controllo Cambi sono incluse anche le righe delle bolle già fatturate, evidenziate per riconoscerle subito; il pulsante di aggiornamento resta disponibile solo sulle righe ancora da fatturare.
+* [FEAT] Nel comando Flag Catalogo Generale è visibile anche il fornitore di ciascun articolo, così è più semplice verificare le informazioni del catalogo.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Le notifiche email possono essere suddivise per valore di una colonna: ogni gruppo riceve un messaggio separato e il valore può comparire nell'oggetto; è inoltre possibile nascondere il riepilogo dell'invio.
+* [FEAT] Nei filtri data delle notifiche sono disponibili periodi rapidi come oggi, ieri, domani, questa settimana e questo mese.
+* [FEAT] È possibile aggiungere un testo libero in fondo alle email di notifica, ad esempio saluti o contatti.
+* [FEAT] Le schede adattive delle notifiche Teams supportano un colore del testo configurabile.
+
+#### Correzioni
+* [FIX] Corretto lo sfondo delle schede Teams con gruppi annidati, che ora copre correttamente l'area prevista.
+
+#### Documentazione
+* [DOCS] Aggiornata la guida amministrativa con le opzioni avanzate per formattare le schede Teams, inclusi sfondi e colori del testo.
+
 ## 🔄 Versione 1.15.7 – 2026-09-28
 
 ### 🛠️ Admin
