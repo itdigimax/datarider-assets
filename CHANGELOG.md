@@ -1,11 +1,5 @@
 ## 🔄 Versione 1.15.8 – 2026-10-06
 
-### 👤 Utente
-
-#### Nuove funzionalità
-* [FEAT] Nel Controllo Cambi sono incluse anche le righe delle bolle già fatturate, evidenziate per riconoscerle subito; il pulsante di aggiornamento resta disponibile solo sulle righe ancora da fatturare.
-* [FEAT] Nel comando Flag Catalogo Generale è visibile anche il fornitore di ciascun articolo, così è più semplice verificare le informazioni del catalogo.
-
 ### 🛠️ Admin
 
 #### Nuove funzionalità
