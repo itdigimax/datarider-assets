@@ -1,3 +1,15 @@
+## 🔄 Versione 1.15.9 – 2026-10-07
+
+### 👤 Utente
+
+* Nessuna modifica rilevante.
+
+### 🛠️ Admin
+
+#### Miglioramenti
+* [IMPROVEMENT] L'invio delle email di notifica è più affidabile: tutte le mail della stessa esecuzione usano un'unica connessione al server di posta, con una breve pausa tra una mail e la successiva (500 ms, modificabile con `EMAIL_SEND_PAUSE_MS`) per non superare il limite di frequenza dell'SMTP.
+* [IMPROVEMENT] Se il server di posta ha un problema temporaneo (connessione interrotta o errore 4xx), l'invio viene ritentato fino a due volte; le mail già accettate non vengono mai rinviate e il log segnala quando una mail è partita dopo un nuovo tentativo.
+
 ## 🔄 Versione 1.15.8 – 2026-10-06
 
 ### 🛠️ Admin
