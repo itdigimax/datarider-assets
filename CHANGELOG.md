@@ -1,3 +1,18 @@
+## 🔄 Versione 1.15.10 – 2026-10-08
+
+### 👤 Utente
+
+* Nessuna modifica rilevante.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Le notifiche email possono ora allegare i risultati in un file Excel (.xlsx), con l'opzione "allega Excel" nel pannello dei messaggi di notifica: il corpo della mail non contiene più la tabella e i dati viaggiano nel file, con intestazione in grassetto bloccata, filtri attivi e numeri e date riconosciuti come tali. Se i messaggi sono suddivisi per colonna, ogni mail riceve il proprio file; oltre i 10 MB l'invio fallisce con un errore esplicito invece di partire con una mail vuota.
+* [FEAT] I colori delle regole di formattazione condizionale del comando vengono applicati anche nel file Excel allegato, così l'allegato appare come la griglia e la mail HTML.
+
+#### Miglioramenti
+* [IMPROVEMENT] Lo script di aggiornamento dell'applicazione sceglie ora il file di configurazione PM2 (stage o produzione) in base alla cartella in cui si trova, e non più alla presenza del file, che è presente in entrambi gli ambienti.
+
 ## 🔄 Versione 1.15.9 – 2026-10-07
 
 ### 👤 Utente
