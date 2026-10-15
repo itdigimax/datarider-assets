@@ -1,3 +1,17 @@
+## 🔄 Versione 1.15.11 – 2026-10-15
+
+### 👤 Utente
+
+* Nessuna modifica rilevante.
+
+### 🛠️ Admin
+
+#### Correzioni
+* [FIX] Aprire il pannello delle notifiche V2 di un comando non esegue più la procedura SQL del comando. Prima, per le procedure che scrivono dati (ad esempio quella degli avvisi sui clienti B2B disattivati), l'apertura poteva lasciare effetti collaterali, come segnare un cliente come già segnalato e far saltare l'avviso successivo.
+
+#### Performance
+* [PERF] Il pannello delle notifiche V2 si apre molto più in fretta: le colonne disponibili non vengono più ricavate eseguendo il comando sul database di origine (fino a circa 27 secondi per i comandi più pesanti), ma lette dalla configurazione "Colonne" del comando e dalle colonne già usate nei messaggi. Se la configurazione manca, il server legge la struttura del risultato senza eseguire nulla; per le procedure SQL la cui struttura non è determinabile (ad esempio con tabelle temporanee) le colonne vanno configurate nel tab "Colonne" del comando.
+
 ## 🔄 Versione 1.15.10 – 2026-10-08
 
 ### 👤 Utente
