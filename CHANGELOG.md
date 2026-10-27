@@ -1,3 +1,18 @@
+## 🔄 Versione 1.15.12 – 2026-10-27
+
+### 👤 Utente
+
+#### Correzioni
+* [FIX] Passando da un comando normale a un comando che mostra un file di log, o al contrario, la pagina non va più in errore e non serve più ricaricarla.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] I comandi di tipo SSH Tail possono mostrare in cima al risultato una riga di intestazione in verde: basta che il comando SSH stampi per prima una riga che inizia con `@@INFO@@` (ad esempio il nome del file letto e le sue date di modifica e creazione). Il marcatore non viene mostrato né copiato con "Copia Output", e la riga resta visibile anche quando si usa il filtro.
+
+#### Miglioramenti
+* [IMPROVEMENT] Il campo "Comando SSH" dei comandi SSH Tail accetta ora fino a 500 caratteri (prima 255), così si possono scrivere comandi più articolati. Per i database esistenti la colonna `C_SSH_Command` di `dr.Commands` va allungata a `NVARCHAR(500)`; le nuove installazioni la creano già così.
+
 ## 🔄 Versione 1.15.11 – 2026-10-15
 
 ### 👤 Utente
