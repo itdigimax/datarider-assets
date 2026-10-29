@@ -1,3 +1,15 @@
+## 🔄 Versione 1.15.13 – 2026-10-29
+
+### 👤 Utente
+
+#### Correzioni
+* [FIX] Nelle colonne che contengono un pulsante accanto al valore, la colonna è ora abbastanza larga da mostrare sia il pulsante sia il valore: prima il pulsante poteva occupare tutta la cella e nascondere il testo.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Nella finestra di modifica di un pulsante è disponibile il campo "Timeout esecuzione (secondi)": il valore indicato vale per quel pulsante e ha la precedenza sul timeout del comando, così le azioni più lunghe non vengono interrotte dal limite generale. Se il campo è vuoto resta il default di 60 secondi. Il campo non compare per i pulsanti Excel.
+
 ## 🔄 Versione 1.15.12 – 2026-10-27
 
 ### 👤 Utente
