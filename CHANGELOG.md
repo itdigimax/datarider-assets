@@ -1,3 +1,26 @@
+## 🔄 Versione 1.15.14 – 2026-11-05
+
+### 👤 Utente
+
+#### Correzioni
+* [FIX] Passando da un comando all'altro, la pagina riparte pulita: non restano più per un attimo i parametri del comando precedente.
+* [FIX] I pulsanti eseguiti con l'azione sulla riga di intestazione della colonna risultano ora segnati come già eseguiti anche nelle singole righe.
+
+#### Miglioramenti
+* [IMPROVEMENT] La tabella è più stabile e reattiva quando si raggruppano le righe o si usano i pulsanti: vengono evitati aggiornamenti inutili che potevano rallentarla.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] L'invio di prova delle notifiche V2 e delle e-mail schedulate chiede ora l'indirizzo e-mail a cui spedire (ricordato per la volta successiva). La prova va solo a quell'indirizzo e non ai destinatari salvati nella configurazione; il server rifiuta la richiesta se l'indirizzo manca o non è valido.
+
+#### Correzioni
+* [FIX] Nello storico degli import Excel il cambio pagina nel dettaglio funziona ora in modo corretto e il filtro per origine ignora i valori non validi.
+
+#### Miglioramenti
+* [IMPROVEMENT] La formattazione condizionale nelle e-mail è più affidabile: il tempo massimo per valutare una regola passa da 50 a 500 millisecondi, così una regola corretta non viene più scartata quando il server è sotto carico. Le regole troppo lente sono segnalate nel log (al massimo una volta ogni 10 secondi).
+* [IMPROVEMENT] Aggiunto il comando `npm run typecheck` per controllare i tipi di frontend e backend; i file di compilazione temporanei sono ignorati da Git. Le risposte di errore dei gruppi restano invariate.
+
 ## 🔄 Versione 1.15.13 – 2026-10-29
 
 ### 👤 Utente
