@@ -1,3 +1,16 @@
+## 🔄 Versione 1.15.15 – 2026-11-12
+
+### 👤 Utente
+
+#### Correzioni
+* [FIX] Nella finestra di modifica dei dati, gli elenchi a tendina collegati tra loro funzionano meglio: se cambi un valore, i campi che dipendono da lui vengono svuotati, così non restano scelte non più valide. All'apertura della finestra i valori già presenti vengono riconosciuti correttamente anche se cambiano maiuscole o spazi.
+
+### 🛠️ Admin
+
+#### Nuove funzionalità
+* [FEAT] Nella scheda di un comando è disponibile la casella "Sidebar → Nascondi": il comando non compare più nel menu laterale ma resta utilizzabile, ad esempio quando viene aperto da un pulsante di un altro comando.
+* [FEAT] Nel pannello Connessioni ogni connessione ha ora una casella per attivare la cifratura (TLS), necessaria per collegarsi a database Azure SQL. Vale anche per il test della connessione. Le connessioni esistenti restano non cifrate; prima del deploy del backend va applicata la migration che aggiunge la colonna `DC_Encrypt` a `dr.DbConnections`.
+
 ## 🔄 Versione 1.15.14 – 2026-11-05
 
 ### 👤 Utente
