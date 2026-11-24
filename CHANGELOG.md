@@ -1,3 +1,18 @@
+## 🔄 Versione 1.15.16 – 2026-11-24
+
+### 👤 Utente
+
+* Nessuna modifica rilevante.
+
+### 🛠️ Admin
+
+#### Correzioni
+* [FIX] Risolto un errore che poteva svuotare l'elenco delle connessioni (sia nella tab Connessioni sia nel menu di selezione connessione del comando) sugli ambienti dove non era ancora stata applicata la migration sulla cifratura della password: ora l'elenco viene mostrato correttamente anche in quel caso.
+* [FIX] Nella configurazione della policy di import per ruolo, la casella "Bypass" risulta ora sempre allineata con lo stato dello step, evitando che una spunta impostata insieme a uno stato incompatibile venisse persa al salvataggio.
+
+#### Miglioramenti
+* [IMPROVEMENT] Sugli ambienti di stage l'invio automatico delle notifiche ed e-mail schedulate è ora disattivato di default, per evitare invii indesiderati quando si ripristina sullo stage un database di produzione con connessioni e schedulazioni già attive; resta possibile riattivarlo esplicitamente tramite una variabile d'ambiente dedicata.
+
 ## 🔄 Versione 1.15.15 – 2026-11-12
 
 ### 👤 Utente
